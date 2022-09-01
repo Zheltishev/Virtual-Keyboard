@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #d16ba5, #ff8455, #d1c03e, #32fdf0);
+}
+
+textarea {
+    resize: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-area {
+    width: 70vw;
+    height: 40vh;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 0.5vw;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.keyboard-string {
+    display: flex;
+}
+
+.keyboard-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 2em;
+    margin: 0 0.3vw 0.3vw 0;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.keyboard-button:focus {
+    outline: none;
+}
+
+.keyboard-button[data-type='func'] {
+    background-color: lightgrey;
+}
+
+.keyboard-button:hover {
+    background-color: lightblue;
+}
+
+.keyboard-button.press {
+    background-color: lightcoral;
+}
